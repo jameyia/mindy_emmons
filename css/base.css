@@ -1,18 +1,71 @@
 /* === HEADER === */
 
-header .name {
+/*
 	background: #444444;
 	color: #777777;
-	text-align: right;
-	padding: 1em 2em;
-}
-header .title {
-	background: #777777;
-	color: #444444;
-	text-align: right;
-	padding: 1em 2em;
+*/
+
+header {
+	min-height: 12em;
+	width: 100%;
 }
 
+.pic {
+	width: 25%;
+	display: inline-block;
+	background: green;
+	height: 12em;
+	position: relative;
+}
+
+.level1 {
+	background: #777777;
+	color: #444444;
+	height: 6em;
+}
+
+.level2 {
+	background: #444444;
+	color: #777777;
+	height: 6em;
+}
+
+.name {
+	width: 75%;
+	display: inline-block;
+	text-align: center;
+	background: green;
+	height: 12em;
+	
+	/* NECESSARY */
+	vertical-align: top;
+}
+
+.prof, .title {
+	position: relative;
+}
+
+.level1 h1, .level2 h2 {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.pic img {
+	display: block;
+	max-height: 70%;
+	position: absolute;
+	z-index: 1;
+	
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	
+	border: 2px solid white;
+}
 
 @media only screen and (max-width: 44em)
 {
