@@ -90,6 +90,34 @@ h3 {
 .resume-section li.description {
 	width: 70%;
 }
+
+/* === FOOTER === */
+
+footer {
+	background: #000000;
+	color: #FFFFFF;
+	font-size: 0.8em;
+	text-align: center;
+	
+	padding: 0.5em 0;
+}
+
+footer ul {
+	width: 100%;
+	}
+	
+footer li {
+	display: inline-block;
+	padding: 0 0.2em;
+	border-left: 1px solid #FFFFFF;
+	margin-left: -1px;
+}
+
+footer li:first-child {
+	border-left: none;
+	margin-left: 0;
+}
+
 @media only screen and (max-width: 44em)
 {
 	
