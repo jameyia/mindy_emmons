@@ -67,6 +67,29 @@ header {
 	border: 2px solid white;
 }
 
+/* === RESUME === */
+
+h3 {
+	text-align: center;
+}
+
+.resume-section ul {
+	width: 100%;
+	background: green;
+}
+
+.resume-section li {
+	display: inline-block;
+	text-align: left;
+}
+
+.resume-section li.time {
+	width: 30%;
+}
+
+.resume-section li.description {
+	width: 70%;
+}
 @media only screen and (max-width: 44em)
 {
 	
