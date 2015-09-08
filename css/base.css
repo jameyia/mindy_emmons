@@ -6,12 +6,12 @@
 */
 
 header {
-	min-height: 12em;
+	height: 12em;
 	width: 100%;
 }
 
 .pic {
-	width: 25%;
+	width: 35%;
 	display: inline-block;
 	background: green;
 	height: 12em;
@@ -19,24 +19,38 @@ header {
 }
 
 .level1 {
-	background: #777777;
-	color: #444444;
+	/*
+	background: #444444;
+	color: #777777;
+	*/
+	
+	background: #003D00;
+	color: #009900;
+	
 	height: 6em;
 }
 
 .level2 {
-	background: #444444;
-	color: #777777;
+	/*
+	background: #777777;
+	color: #444444;
+	*/
+	
+	background: #009900;
+	color: #003D00;
+	
 	height: 6em;
 }
 
 .name {
-	width: 75%;
+	width: 65%;
 	display: inline-block;
 	text-align: center;
 	background: green;
 	height: 12em;
 	
+	font-family: 'raleway', cursive;
+	font-weight: bold;
 	/* NECESSARY */
 	vertical-align: top;
 }
@@ -44,6 +58,11 @@ header {
 .prof, .title {
 	position: relative;
 }
+
+/*
+.prof {font-family: 'Droid Serif', serif;}
+.title{font-family: 'Coda', cursive;}
+*/
 
 .level1 h1, .level2 h2 {
 	position: absolute;
@@ -69,18 +88,41 @@ header {
 
 /* === RESUME === */
 
+main {
+	/*
+	background: #444444;
+	color: #777777;
+	*/
+	background: #003D00;
+	color: #009900;
+
+	
+	
+	padding: 1em 25%;
+}
+
 h3 {
 	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 0.5em;
+}
+
+.resume-section {
+	margin-bottom: 2em;
+	font-family: 'Droid Sans', sans-serif;
+}
+.resume-section:last-child {
+	margin-bottom: 0;
 }
 
 .resume-section ul {
 	width: 100%;
-	background: green;
 }
 
 .resume-section li {
 	display: inline-block;
 	text-align: left;
+	vertical-align: top;
 }
 
 .resume-section li.time {
@@ -89,6 +131,15 @@ h3 {
 
 .resume-section li.description {
 	width: 70%;
+}
+
+#qualifications ul {
+	text-align: center;
+}
+
+#qualifications li {
+	display: block;
+	text-align: center;
 }
 
 /* === FOOTER === */
@@ -109,7 +160,7 @@ footer ul {
 footer li {
 	display: inline-block;
 	padding: 0 0.2em;
-	border-left: 1px solid #FFFFFF;
+	border-left: 1px solid #009900;
 	margin-left: -1px;
 }
 
@@ -118,7 +169,36 @@ footer li:first-child {
 	margin-left: 0;
 }
 
-@media only screen and (max-width: 44em)
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active,
+footer a:focus {
+	color: #009900;
+	text-decoration: none;
+	outline: 0;
+}
+
+footer a:focus {color: lime;}
+footer a:hover {color: #FFFFFF;}
+
+@media only screen and (max-width: 75em)
 {
-	
+	main {
+		padding: 1em 10%;
+	}
+}
+
+@media only screen and (max-width: 40em)
+{
+	main {
+		padding: 1em 4%;
+	}
+}
+
+@media only screen and (max-width: 22.5em)
+{
+	#qualifications li {
+		padding-bottom: 1em;
+	}
 }
