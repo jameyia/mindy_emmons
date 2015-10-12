@@ -1,10 +1,5 @@
 /* === HEADER === */
 
-/*
-	background: #444444;
-	color: #777777;
-*/
-
 header {
 	height: 12em;
 	width: 100%;
@@ -19,25 +14,16 @@ header {
 }
 
 .level1 {
-	/*
-	background: #444444;
-	color: #777777;
-	*/
-	
-	background: #003D00;
-	color: #009900;
+	background: #E0F0FF;
+	color: #3D003D;
 	
 	height: 6em;
 }
 
 .level2 {
-	/*
-	background: #777777;
-	color: #444444;
-	*/
 	
-	background: #009900;
-	color: #003D00;
+	background: #3D003D;
+	color: #E0F0FF;
 	
 	height: 6em;
 }
@@ -79,7 +65,7 @@ header {
 	position: absolute;
 	z-index: 1;
 	
-	left: 50%;
+	left: 75%;
 	top: 50%;
 	transform: translate(-50%, -50%);
 	
@@ -89,12 +75,9 @@ header {
 /* === RESUME === */
 
 main {
-	/*
-	background: #444444;
-	color: #777777;
-	*/
-	background: #003D00;
-	color: #009900;
+	
+	background: #E0F0FF;
+	color: #3D003D;
 
 	
 	
@@ -145,11 +128,11 @@ h3 {
 /* === FOOTER === */
 
 footer {
-	background: #000000;
-	color: #FFFFFF;
+	background: #3D003D;
+	color: #E0F0FF;
 	font-size: 0.8em;
 	text-align: center;
-	
+	font-family: 'Raleway', sans-serif;
 	padding: 0.5em 0;
 }
 
@@ -160,7 +143,7 @@ footer ul {
 footer li {
 	display: inline-block;
 	padding: 0 0.2em;
-	border-left: 1px solid #009900;
+	border-left: 1px solid #E0F0FF;
 	margin-left: -1px;
 }
 
@@ -174,18 +157,25 @@ footer a:visited,
 footer a:hover,
 footer a:active,
 footer a:focus {
-	color: #009900;
+	color: #E0F0FF;
 	text-decoration: none;
 	outline: 0;
 }
 
-footer a:focus {color: lime;}
-footer a:hover {color: #FFFFFF;}
+
+footer a:hover, footer a:focus {
+	color: #FFFFFF;
+	font-weight: bold;
+}
 
 @media only screen and (max-width: 75em)
 {
 	main {
 		padding: 1em 10%;
+	}
+	
+	.pic img {
+		left: 50%;
 	}
 }
 
